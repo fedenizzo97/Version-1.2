@@ -1,0 +1,30 @@
+{% extends "AppCovid/padre.html" %}
+
+{% load static %} 
+
+{% block contenido2 %} 
+
+
+<h1 class="mb-1">Formularios para cargar Barbijos: </h1>
+
+{% endblock %}
+
+{% block contenido %} 
+
+    <form action="/barbijosFormulario/" method= "POST">
+
+        <p> Marca: <input type= "text" name= "marca"> </p>
+
+        <p> Tamaño: <input type= "text" name= "tamanio"> </p>
+
+        <p> Precio: <input type= "number" name= "precio"> </p>
+
+        <input type= "submit" value= "Cargar Datos" >
+
+
+
+
+
+    </form>
+
+{% endblock %}
